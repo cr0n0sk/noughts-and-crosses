@@ -9,7 +9,6 @@ export default function admin() {
     const [activeRooms, setActiveRooms] = useState([]);
 
     useEffect(() => {
-        // setSocket(io(END_POINT).emit("wassap", "wassap"));
 
         fetch('/api/socketio').finally(() => {
             const socket = io();
